@@ -1,0 +1,18 @@
+{% extends "blogs/base.html" %}
+{% load bootstrap3 %}
+
+{% block header %}
+  <div class='jumbotron'>
+	  <h1>Add your blog.</h1>
+  </div>
+{% endblock header %}
+
+{% block content %}
+  <h2>
+	  <a href="{% url 'users:register'%}">Register an account.</a>To 
+	  add your blog.
+  </h2>
+  <h2>
+	  You can write somthing on the blog.
+  </h2>
+{% endblock content %}
